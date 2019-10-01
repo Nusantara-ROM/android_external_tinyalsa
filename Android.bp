@@ -54,6 +54,7 @@ cc_binary {
             enabled: false,
         },
     },
+    vendor_available: true,
 }
 
 cc_binary {
@@ -61,6 +62,7 @@ cc_binary {
     srcs: ["tinycap.c"],
     shared_libs: ["libtinyalsa"],
     cflags: ["-Werror"],
+    vendor_available: true,
 }
 
 cc_binary {
@@ -68,6 +70,7 @@ cc_binary {
     srcs: ["tinymix.c"],
     shared_libs: ["libtinyalsa"],
     cflags: ["-Werror", "-Wall"],
+    vendor_available: true,
 }
 
 cc_binary {
@@ -75,6 +78,7 @@ cc_binary {
     srcs: ["tinyhostless.c"],
     shared_libs: ["libtinyalsa"],
     cflags: ["-Werror"],
+    vendor_available: true,
 }
 
 cc_binary {
@@ -82,4 +86,5 @@ cc_binary {
     srcs: ["tinypcminfo.c"],
     shared_libs: ["libtinyalsa"],
     cflags: ["-Werror"],
+    vendor_available: true,
 }
